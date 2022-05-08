@@ -1,0 +1,13 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  background: #ebf5ff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 10px 15px;
+  width: 95%;
+  margin-bottom: 10px;
+}

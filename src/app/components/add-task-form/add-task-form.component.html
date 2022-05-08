@@ -1,0 +1,29 @@
+<!-- Angular reactive form solution using form builder & form group  -->
+<form [formGroup]="addToDoData" (ngSubmit)="onSubmit()">
+  <div>
+    <input id="id" type="text" formControlName="id" placeholder="Task ID">
+  </div>
+  <div>
+    <input  id="title" type="text" formControlName="title" placeholder="Add Todo">
+  </div>
+  <div>
+    <input id="description" type="text" formControlName="description" placeholder="Task Description">
+  </div>
+  <!-- <div>
+    <label for="id">ID</label>
+    <input id="id" type="text" formControlName="id">
+  </div> -->
+  <button class="button" type="submit">Add Todo</button>
+</form>
+
+<!-- Display validation errors --> 
+<!-- resource: https://angular.io/guide/form-validation -->
+<div>{{addToDoData.status}}</div>
+
+
+
+<!-- Angular template-driven forms solution  -->
+<!-- <form #ngForm="ngForm" (ngSubmit)="onSubmit(form)">
+   <input ngModel name="todo" todo placeholder="add todo">
+   <button type="submit">Submit</button>
+</form>  -->
